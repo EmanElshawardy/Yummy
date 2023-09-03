@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Yummy</title>
+  <link href="./images/logo.png" rel="icon" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Dai+Banna+SIL:wght@600&family=Inter:wght@200;500&family=Montserrat:wght@900&family=Open+Sans:wght@300&family=Pacifico&family=Rubik:wght@700&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="./css/all.css" />
+  <link rel="stylesheet" href="./css/bootstrap.min.css" />
+  <link rel="stylesheet" href="./css/style.css" />
+</head>
+
+<body>
+  
+<!-- Start loder Section -->
+  <div class="loader align-items-center justify-content-center position-fixed start-0 end-0 top-0 bottom-0 bg-black">
+    <li class="fa-solid fa fa-spinner fa-spin fa-5x text-white"></li>
+  </div>
+<!-- End loder Section -->
+
+<!--Start navBar Section -->
+  <nav class="menu">
+    <div class="sideBarContainer position-fixed top-0 bottom-0 bg-black d-flex text-white">
+      <div class="sideMenuLeft d-flex flex-column justify-content-between p-4 text-white">
+        <div class="links">
+          <ul class="nav flex-column">
+            <li class="nav-item position-relative" onclick="showSearchInputs(); closeSideNav()">
+              <a class="nav-link py-2 text-white" href="#">Search</a>
+            </li>
+            <li class="nav-item position-relative" onclick="getCategories(); closeSideNav()">
+              <a class="nav-link py-2 text-white" href="#">Categories</a>
+            </li>
+            <li class="nav-item position-relative" onclick="getArea(); closeSideNav()">
+              <a class="nav-link py-2 text-white" href="#">Area</a>
+            </li>
+            <li class="nav-item position-relative" onclick="getIngredients(); closeSideNav()">
+              <a class="nav-link py-2 text-white" href="#">Ingredients</a>
+            </li>
+            <li class="nav-item position-relative" onclick="showContactsUs();closeSideNav()">
+              <a class="nav-link py-2 text-white" href="#">Contact Us</a>
+            </li>
+          </ul>
+        </div>
+        <div class="navFooter">
+          <div class="icons">
+            <a href="#"><i class="fa-brands fa-facebook text-white"></i></a>
+            <a href="#"><i class="fa-brands fa-twitter text-white"></i></a>
+            <a href="#"><i class="fa-solid fa-globe text-white"></i></a>
+          </div>
+          <div class="copyright">
+            <p>
+              Copyright Â© 2019 All Rights<br />
+              Reserved.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="sideMenuRight d-flex flex-column justify-content-between py-4 px-2 text-black text-center bg-white">
+        <div class="logo">
+          <img src="./images/logo.png" class="img-fluid" width="50" alt="" />
+        </div>
+        <div class="bars">
+          <i class="sideBarIcon fa-solid fa-bars barIcon fa-2x fa-align-justify"></i>
+        </div>
+        <div class="icons d-flex flex-column">
+          <a href="#"><i class="fa-solid fa-globe text-black pb-1"></i></a>
+          <a href="#"><i class="fa-solid fa-share-nodes text-black"></i></a>
+        </div>
+      </div>
+    </div>
+  </nav>
+<!--End navBar Section -->
+
+<!--start header Section -->
+  <header class="header">
+    <div class="container w-75" id="searchContainer"></div>
+    <div class="loading top-0 start-0 end-0 bottom-0 justify-content-center align-items-center" style="display: none">
+      <i class="fa fa-spinner fa-spin fa-5x"></i>
+    </div>
+    <div class="container">
+      <div class="row py-5 g-4" id="showData"></div>
+    </div>
+  </header>
+<!--End header Section -->
+
+
+  <script src="./js/code.jquery.com_jquery-3.7.0.min.js"></script>
+  <script src="./js/index.js"></script>
+</body>
+
+</html>

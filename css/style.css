@@ -1,0 +1,51 @@
+*,
+*::after,
+*::before {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+/* :root {
+  --first-color: #113555;
+  --second-color: hsla(0,0%,100%,.2);
+  --third-color: hsla(0,0%,100%,.3);
+} */
+body {
+  overflow: hidden;
+  background-color: #0d0d0d;
+}
+
+.sideBarContainer {
+  height: 100%;
+  z-index: 9;
+}
+.nav-link {
+  padding: 0px;
+}
+.loader {
+  display: flex;
+  z-index: 9999;
+}
+.layer {
+  width: 100%;
+  height: 100%;
+  background-color: #f9f6f6ca;
+  top: 100%;
+  transition: 0.5s;
+}
+.meal:hover .layer {
+  top: 0;
+}
+.loading {
+  position: absolute;
+  z-index: 9;
+  background-color: #0d0d0d;
+  display: flex;
+}
+.sideMenuLeft {
+  background-color: #0d0d0d;
+}
+
+.form-control::placeholder {
+  color: #6c757d;
+}
